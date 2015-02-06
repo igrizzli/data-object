@@ -1,7 +1,7 @@
 <?php
-namespace Vilks\Data\Exception;
+namespace Vilks\DataObject\Exception;
 
-use Vilks\Data\DataObject;
+use Vilks\DataObject\DataObject;
 
 class PropertyValidationFailedException extends DataObjectException
 {

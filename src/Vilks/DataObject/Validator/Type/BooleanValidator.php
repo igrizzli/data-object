@@ -1,5 +1,5 @@
 <?php
-namespace Vilks\Data\Validator\Type;
+namespace Vilks\DataObject\Validator\Type;
 
 class BooleanValidator implements TypeValidatorInterface, AliasedTypeValidatorInterface
 {

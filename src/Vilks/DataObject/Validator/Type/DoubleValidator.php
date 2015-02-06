@@ -1,9 +1,9 @@
 <?php
-namespace Vilks\Data\Validator\Type;
+namespace Vilks\DataObject\Validator\Type;
 
-class StringValidator implements TypeValidatorInterface, AliasedTypeValidatorInterface
+class DoubleValidator implements TypeValidatorInterface, AliasedTypeValidatorInterface
 {
-    const NAME = 'string';
+    const NAME = 'double';
 
     /**
      * {@inheritDoc}
@@ -18,7 +18,7 @@ class StringValidator implements TypeValidatorInterface, AliasedTypeValidatorInt
      */
     public static function getAliases()
     {
-        return ['str'];
+        return ['float'];
     }
 
     /**
@@ -27,7 +27,7 @@ class StringValidator implements TypeValidatorInterface, AliasedTypeValidatorInt
     public function getCallback($type, $subType = null)
     {
         return function ($value) use ($type) {
-            return is_string($value);
+            return is_double($value);
         };
     }
 }

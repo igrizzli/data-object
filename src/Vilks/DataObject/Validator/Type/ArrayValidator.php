@@ -1,7 +1,7 @@
 <?php
-namespace Vilks\Data\Validator\Type;
+namespace Vilks\DataObject\Validator\Type;
 
-use Vilks\Data\Validator\DataObjectValidator;
+use Vilks\DataObject\Validator\DataObjectValidator;
 
 class ArrayValidator implements TypeValidatorInterface
 {

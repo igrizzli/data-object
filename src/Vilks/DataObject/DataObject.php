@@ -1,16 +1,16 @@
 <?php
-namespace Vilks\Data;
+namespace Vilks\DataObject;
 
-use Vilks\Data\Exception\DirectPropertySetException;
-use Vilks\Data\Exception\PropertyNotFoundException;
-use Vilks\Data\Exception\PropertyValidationFailedException;
-use Vilks\Data\Exception\WrongEvolutionInheritanceException;
-use Vilks\Data\Validator\DataObjectValidatorFactory;
+use Vilks\DataObject\Exception\DirectPropertySetException;
+use Vilks\DataObject\Exception\PropertyNotFoundException;
+use Vilks\DataObject\Exception\PropertyValidationFailedException;
+use Vilks\DataObject\Exception\WrongEvolutionInheritanceException;
+use Vilks\DataObject\Validator\DataObjectValidatorFactory;
 
 /**
  * Base DataObject
  *
- * @package Vilks\Data
+ * @package Vilks\DataObject
  */
 abstract class DataObject
 {

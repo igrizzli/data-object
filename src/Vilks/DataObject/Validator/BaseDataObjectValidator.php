@@ -1,8 +1,8 @@
 <?php
-namespace Vilks\Data\Validator;
+namespace Vilks\DataObject\Validator;
 
-use Vilks\Data\Validator\Type\AliasedTypeValidatorInterface;
-use Vilks\Data\Validator\Type\TypeValidatorInterface;
+use Vilks\DataObject\Validator\Type\AliasedTypeValidatorInterface;
+use Vilks\DataObject\Validator\Type\TypeValidatorInterface;
 
 class BaseDataObjectValidator implements DataObjectValidator
 {

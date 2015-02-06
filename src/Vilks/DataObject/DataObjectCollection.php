@@ -1,5 +1,5 @@
 <?php
-namespace Vilks\Data;
+namespace Vilks\DataObject;
 
 class DataObjectCollection
 {

@@ -1,7 +1,7 @@
 <?php
-namespace Vilks\Data\Validator\Type;
+namespace Vilks\DataObject\Validator\Type;
 
-use Vilks\Data\DataObjectCollection;
+use Vilks\DataObject\DataObjectCollection;
 
 class CollectionValidator implements TypeValidatorInterface
 {

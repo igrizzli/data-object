@@ -1,5 +1,5 @@
 <?php
-namespace Vilks\Data\Validator;
+namespace Vilks\DataObject\Validator;
 
 interface DataObjectValidator
 {
