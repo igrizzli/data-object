@@ -1,0 +1,10 @@
+build:
+  tests:
+    before: ['phpunit']
+filter:
+  excluded_paths: ['tests/']
+tools:
+    external_code_coverage: true
+    php_code_sniffer:
+      config:
+        standard: "PSR2"
