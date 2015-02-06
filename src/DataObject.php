@@ -57,57 +57,6 @@ abstract class DataObject
     }
 
     /**
-     * Create instance of DataObject with values based on DataObject of parent class
-     *
-     * @param DataObject $source Data source object
-     *
-     * @return static
-     * @throws WrongEvolutionInheritanceException If source DataObject is not parent of target DataObject
-     */
-    public static function evolve(DataObject $source)
-    {
-        $replica = static::create();
-        if (!$replica instanceof $source) {
-           throw new WrongEvolutionInheritanceException(
-               $replica,
-               $source,
-               sprintf('Class "%s" must be parent for "%s"', get_class($source), get_class($replica))
-           );
-        }
-        foreach (get_object_vars($source) as $name => $value) {
-            $replica->$name = $value;
-        }
-
-        return $replica;
-    }
-
-    /**
-     * Create instance of DataObject with values based on DataObject of child class
-     *
-     * @param DataObject $source Data source object
-     *
-     * @return static
-     * @throws WrongEvolutionInheritanceException If source DataObject is not child of target DataObject
-     */
-    public static function devolve(DataObject $source)
-    {
-        $replica = static::create();
-        if (!$source instanceof $replica) {
-            throw new WrongEvolutionInheritanceException(
-                $replica,
-                $source,
-                sprintf('Class "%s" must be parent for "%s"', get_class($replica), get_class($source))
-            );
-        }
-
-        foreach (get_object_vars($replica) as $name => $value) {
-            $replica->$name = $source->$name;
-        }
-
-        return $replica;
-    }
-
-    /**
      * Magic set property of DataObject
      *
      * IMPORTANT: For better performance in production you need
