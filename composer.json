@@ -1,0 +1,11 @@
+{
+    "name": "igrizzli/data-object",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Vilks",
+            "email": "igrizzli@gmail.com"
+        }
+    ],
+    "require": {}
+}
